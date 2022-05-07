@@ -35,9 +35,6 @@ export class SignupComponent implements OnInit {
           email,
           password,
         })
-        .then(() => {
-          console.log('User registered');
-        })
         .catch((err) => {
           if (err instanceof SignupError) {
             switch (err.type) {
